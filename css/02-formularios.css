@@ -1,0 +1,9 @@
+* { box-sizing: border-box; }
+
+#contenedor {
+	width: 60%;
+	margin: 20px auto;
+	border: 1px solid #ABABAB;
+
+	padding: 20px;
+}
