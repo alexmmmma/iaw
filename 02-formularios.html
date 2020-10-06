@@ -9,13 +9,13 @@
 <body>
 	<div id="contenedor">
 		<h1>Formularios</h1>
-		<form action="datos.php" method="GET">
+		<form action="02-formularios-recibe.php" method="GET">
 			<div class="campos">
 				<label for="nome">Nome: </label>
 				<input id="nome" type="text" name="nome">
 			</div>
 
-			<input type="hidden" value="ref123">
+			<input type="hidden" value="ref123" name="referencia">
 
 			<div class="campos">
 				<label>Sexo: </label>
@@ -23,8 +23,23 @@
 				<input id="home" type="radio" name="sexo" value="H">
 				<label for="muller">Muller </label>
 				<input id="muller" type="radio" name="sexo" value="M">
+			</div>
+			<div class="campos">
+				<label for="cond">Acepto as condicións</label>
+				<input id="cond" type="checkbox" name="condicions" value="SI">
+			</div>
+
+			<div class="campos">
+				<label>Deportes:</label>
+				<label for="ft"> Fútbol </label>
+				<input id="ft" type="checkbox" value="ft" name="dep[]" >
+				<label for="bl"> Baloncesto </label>
+				<input id="bl" type="checkbox" value="bl" name="dep[]" >
+				<label for="tn"> Ténis </label>
+				<input id="tn" type="checkbox" value="tn" name="dep[]" >
 
 			</div>
+
 
 			<div class="campos">
 				<input type="submit" value="Enviar datos ">
