@@ -40,6 +40,32 @@
 
 			</div>
 
+			<div class="campos">
+				<label for="prov">Provincia:</label>
+				<select name="provincia" id="prov" >
+					<option value=""></option>
+					<option value="CO">A Coruña</option>
+					<option value="LU">Lugo</option>
+					<option value="OU">Ourense</option>
+					<option value="PO">Pontevedra</option>
+				</select>
+			</div>
+
+			<div class="campos">
+				<label for="so">Sistemas Operativos:</label>
+				<select name="so[]" id="so" multiple size="5">
+					<option value="w10">Windows 10</option>
+					<option value="w8">Windows 8</option>
+					<option value="lx">Linux</option>
+					<option value="mac">MACOS</option>
+					<option value="ot">Outros</option>
+				</select>
+			</div>
+
+			<div class="campos">
+				<label for="coment">Comentario:</label>
+				<textarea name="comentario" id="coment" cols="30" rows="4"></textarea>
+			</div>
 
 			<div class="campos">
 				<input type="submit" value="Enviar datos ">

@@ -17,15 +17,15 @@
 		$referencia = $_GET["referencia"] ?? "";
 		$condicions = $_GET["condicions"] ?? "";
 		$dep = $_GET["dep"] ?? array();
-
-		
-
-
+		$provincia = $_GET["provincia"] ?? "";
+		$so = $_GET["so"] ?? array();
+		$comentario = $_GET["comentario"] ?? "";
 
 		echo "\n<p>Nome: $nome</p>";
 		echo "\n<p>Sexo: $sexo</p>";
 		echo "\n<p>Referencia: $referencia</p>";
 		echo "\n<p>Condicións: $condicions</p>";
+
 		echo "\n<p>Deportes:";
 		//var_dump($dep);//mostrar array en crudo con todo tipo de detalles
 		//print_r($dep); //mostrar array en crudo con menos información
@@ -35,6 +35,21 @@
 					}	
 			echo "\n\t</ul>";			
 		echo "\n</p>";
+
+		echo "\n<p>Provincia: $provincia</p>";
+
+		echo "\n<p>Sistemas operativos:";
+			echo "\n\t<ul>";
+			foreach ($so as $valor) {
+						echo "\n\t\t<li>$valor</li>";
+					}	
+			echo "\n\t</ul>";			
+		echo "\n</p>";
+
+		echo "\n<p>Comentario: $comentario</p>";
+
+
+
 
 	?>
 	<a href="02-formularios.html">[Volver]</a>
