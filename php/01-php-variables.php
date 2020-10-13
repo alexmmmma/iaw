@@ -42,9 +42,9 @@
 		'b' => "el. 2 "
 	);
 
-	echo "\n\t<p>valor de \$enteiro: $enteiro </p>";
-	echo "\n\t<p>valor de \$real: $real </p>";
-	echo "\n\t<p>valor de \$cadea: $cadea </p>";
+	echo "\n\t<p>valor de \$enteiro: $enteiro , tipo:".gettype($enteiro)."</p>";
+	echo "\n\t<p>valor de \$real: $real , tipo:".gettype($real)."</p>";
+	echo "\n\t<p>valor de \$cadea: $cadea , tipo:".gettype($cadea)."</p>";
 
 	var_dump("\$array1:" , $array1);//é para volcar unha estructura, pero non tes o control
 
@@ -53,6 +53,7 @@
 		echo "\t\n<br>$key -> $value";
 	}
 	echo "\n</p>";
+	echo "\n<p>Tipo de \$array1:".gettype($array1)."</p>";
 
 	echo "\n<p>Contido de \$array2:";
 	foreach ($array2 as $key => $value) {
